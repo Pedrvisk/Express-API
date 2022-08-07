@@ -1,0 +1,12 @@
+{
+    "title": "english",
+    "navbar": {
+        "home": "Home",
+        "commands": "Commands",
+        "status": "Stats",
+        "privacy": "Privacy & Terms"
+    },
+		"error": {
+			"button": "Go to homepage"
+		}
+}
