@@ -5,10 +5,10 @@
 
 #project
 .greenlockrc
-/plugins
-/public
-/middlewares
-/controllers
+src/plugins/*
+src/public/*
+src/middlewares/*
+src/controllers/*
 
 # misc
 .DS_Store
