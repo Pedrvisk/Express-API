@@ -1,5 +1,5 @@
-const greenlock = require('greenlock-express');
 const express = require('express');
+const axios = require('axios');
 
 // Backend: Express
 class Express {
@@ -21,7 +21,9 @@ class Express {
 	}) {
 		this.app = express();
 		this.greenlock = greenlock;
-		this.api = api;
+		this.express = express;
+		this.options = api;
+		this.axios = axios;
 
 		// Express: Console Log
 		const Console = require('./Console');
@@ -46,16 +48,16 @@ class Express {
 		if (!hostname) hostname = 'localhost';
 
 		// Start: Load Plugins
-		if (this.api.plugins) await this.plugins.init();
+		if (this.options.plugins) await this.plugins.init();
 
 		// Start: Load Routers
-		if (this.api) await this.routers.init();
+		if (this.options) await this.routers.init();
 
 		if (this.greenlock.enabled === true) {
 			this.console.log(`Start: ${this.console.color.green('HTTPS/SSL')}`, ['SERVER']);
 
 			// Start: HTTPS/SSL Listen Server
-			return greenlock.init({
+			return require('greenlock-express').init({
 				packageRoot: this.greenlock.packageRoot,
 				configDir: this.greenlock.configDir,
 				maintainerEmail: this.greenlock.maintainerEmail,

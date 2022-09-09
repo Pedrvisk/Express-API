@@ -1,21 +1,19 @@
 const { existsSync, readdirSync } = require('fs');
 
-// Express: Plugins
+// : Plugins
 class Plugins {
-	constructor(express) {
-		this.options = express.api;
-		this.app = express.app;
-		this.express = express;
+	constructor(api) {
+		this.api = api;
 	}
 
 	// Plugins: Init
 	async init() {
-		if (existsSync(this.options.plugins)) {
+		if (existsSync(this.api.options.plugins)) {
 
-			const plugins = await readdirSync(this.options.plugins).filter((file) => file.endsWith('.js')).map((file) => file.split('.')[0]);
+			const plugins = await readdirSync(this.api.options.plugins).filter((file) => file.endsWith('.js')).map((file) => file.split('.')[0]);
 			for (const plugin of plugins) {
-				this.express.console.log(this.express.console.color.yellow(plugin), ['PLUGIN']);
-				require(`${this.options.plugins}/${plugin}`)(this.app, this.express);
+				this.api.console.log(this.api.console.color.yellow(plugin), ['PLUGIN']);
+				require(`${this.api.options.plugins}/${plugin}`)(this.api);
 			}
 
 			return true;
@@ -25,5 +23,5 @@ class Plugins {
 	}
 }
 
-// Express: Export Plugins
+// : Export Plugins
 module.exports = Plugins;

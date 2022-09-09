@@ -2,15 +2,15 @@ const helmet = require('helmet');
 const cors = require('cors');
 
 // Plugins: Security
-module.exports = (app, express) => {
+module.exports = (api) => {
 
 	// Security: Cors
-	app.use(cors({
+	api.app.use(cors({
 		origin: 'http://localhost:3001',
 		optionsSuccessStatus: 200,
 	}));
 
 	// Security: Helmet
-	app.disable('x-powered-by');
-	app.use(helmet());
+	api.app.disable('x-powered-by');
+	api.app.use(helmet());
 }

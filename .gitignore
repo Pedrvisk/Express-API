@@ -3,6 +3,13 @@
 # dependencies
 /node_modules
 
+#project
+.greenlockrc
+/plugins
+/public
+/middlewares
+/controllers
+
 # misc
 .DS_Store
 .env.local

@@ -1,4 +1,5 @@
-module.exports = (req, res, next) => {
-	console.log('Authenticated!');
-	next();
-}
+module.exports = (api) =>
+	function (req, res, next) {
+		console.log('Authenticated!');
+		next();
+	}
