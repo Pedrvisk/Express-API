@@ -1,19 +1,16 @@
 {
-  "name": "server",
+  "name": "miukyapi",
   "version": "1.0.0",
   "main": "Dashboard.js",
+  "author": "Pedrovisk",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.27.2",
     "cors": "^2.8.5",
-    "discord-oauth2": "^2.10.0",
     "dotenv": "^16.0.1",
-    "express": "^4.18.1",
-    "express-oracle-session2": "^0.1.0",
-    "express-session": "^1.17.3",
-		"greenlock-express": "^4.0.3",
+    "express": "^4.18.1",  
+    "greenlock-express": "^4.0.3",
     "helmet": "^5.1.1",
-    "oracledb": "^5.4.0",
     "response-time": "^2.3.2"
   }
 }
