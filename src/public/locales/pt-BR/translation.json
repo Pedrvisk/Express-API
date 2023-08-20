@@ -1,0 +1,42 @@
+{
+	"title": "Português-Brasil",
+	"header": {
+		"navbar": {
+			"home": "Início",
+			"commands": "Comandos",
+			"status": "Status",
+			"privacy": "Privacidade & Termos",
+			"dashboard": {
+				"profile": "Perfil",
+				"guilds": "Meus servidores",
+				"login": "Entrar",
+				"logout": "Deslogar"
+			},
+			"mobile": {
+				"title": "Navegação",
+				"dashboard": "Painel de Controle",
+				"footer": "Precisa de ajuda? Clique aqui"
+			},
+			"language": "Idioma"
+		}
+	},
+	"error": {
+		"button": "Ir para página inicial"
+	},
+	"footer": {
+		"copyright": "Copyright © 2022 <0>Pedrovisk</0> — Todos os direitos reservados",
+		"description": "Miuky é um projeto criado para melhorar as minhas competências em Desenvolvimento Web, apresentando vários comandos e funções para melhorar a vida do usuário.",
+		"links": {
+			"home": "Início",
+			"commands": {
+				"title": "Comandos",
+				"util": "Utilidades",
+				"fun": "Entretenimento",
+				"mod": "Moderação"
+			},
+			"status": "Status",
+			"privacy": "Termos de Privacidade",
+			"terms": "Termos de Uso"
+		}
+	}
+}

@@ -1,0 +1,42 @@
+{
+	"title": "english",
+	"header": {
+		"navbar": {
+			"home": "Home",
+			"commands": "Commands",
+			"status": "Stats",
+			"privacy": "Privacy & Terms",
+			"dashboard": {
+				"profile": "Profile",
+				"guilds": "My guilds",
+				"login": "Login",
+				"logout": "Logout"
+			},
+			"mobile": {
+				"title": "Browse",
+				"dashboard": "Dashboard",
+				"footer": "Need some help? Click here"
+			},
+			"language": "Language"
+		}
+	},
+	"error": {
+		"button": "Go to homepage"
+	},
+	"footer": {
+		"copyright": "Copyright © 2022 <0>Pedrovisk</0> - All rights reserved",
+		"description": "Miuky is a project created to improve my skills in Web Development, featuring various commands and functions to improve the user's life.",
+		"links": {
+			"home": "Home",
+			"commands": {
+				"title": "Commands",
+				"util": "Utilities",
+				"fun": "Entertainment",
+				"mod": "Moderation"
+			},
+			"status": "Status",
+			"privacy": "Privacy",
+			"terms": "Terms"
+		}
+	}
+}
