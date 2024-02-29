@@ -6,7 +6,7 @@ A NodeJS project using <strong>[Express](https://www.npmjs.com/package/express)<
 npm install
 ```
 
-## Go to Dashboard.js
+## Go to app.js
 
 #### Usage
 
